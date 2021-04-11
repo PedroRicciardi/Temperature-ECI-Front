@@ -1,4 +1,4 @@
-import { Component, Inject, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Inject, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -15,7 +15,7 @@ interface Temperature {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnChanges {
+export class AppComponent implements OnInit {
   title = 'Front';
   private baseUrl: string
   public cidade: string
@@ -27,9 +27,9 @@ export class AppComponent implements OnChanges {
     this.baseUrl = baseUrl
   }
 
-  ngOnChanges(){
-
-  }
+ngOnInit(){
+  
+}
 
  
  public enviar(){
