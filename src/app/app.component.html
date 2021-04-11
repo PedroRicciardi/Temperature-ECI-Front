@@ -1,0 +1,41 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="99"
+    alt="temperature Logo"
+    src="../assets/logo.jpg"
+  />
+  <span>TempeReal</span>
+  
+  <span class="nome">
+  Pedro Henrique Ellovi Ricciardi <br/> 
+  D21FCF-0 <br/>
+  CP09P01
+  </span> 
+
+    <div class="spacer"></div>
+</div>
+
+<div class="cidade container">
+  <div class="row">
+    <div class="col-3">
+      <label for="cidade" >Cidade e Estado</label>
+      <input class="form-control" type="text" placeholder="Ex: São Paulo, SP" width="50px" name="cidade" [(ngModel)]="cidade"> 
+     <button type="submit" class="btn btn-primary" (click)="enviar()">Enviar</button>
+    </div>
+    <div class="col-4">
+      <span> {{frase}} </span>
+    </div>
+    <div class="col3">
+      <a href="https://github.com/PedroRicciardi/Temperature-ECI">Back</a>
+      <a href=""></a>
+    </div>
+  </div>
+ 
+</div>
+<div class="logoUnip">
+  <img src="../assets/logo-unip.svg">
+</div>
+
+<router-outlet></router-outlet>
+
